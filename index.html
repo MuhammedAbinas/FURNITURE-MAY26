@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-</head>
+  <!-- aos animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 <body>
     <!-- navbar -->
      <nav class="navbar">
@@ -43,8 +45,8 @@
           <button class="herobutton">shop now</button>
          </div>
          <!-- image content -->
-          <div class="heroimage">
-            <img  id="furnitureimg" src="./image/Modern Minimalist Interior.png" alt="no image" >
+          <div  data-aos="zoom-in"" class="heroimage" >
+            <img  id="furnitureimg" src="./image/Modern Minimalist Interior.png" alt="no image"  >
           </div>
       </section>
       <!-- product section -->
@@ -118,6 +120,11 @@
             <div class="footer">
               <p>&copy; May 2026 furniture.All right reserved</p>
             </div>
-    
-</body>
+    </body>
+    <!-- aos animation script -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- aos initialisation -->
+     <script>
+  AOS.init();
+</script>
 </html>
